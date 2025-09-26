@@ -23,7 +23,7 @@ EOF
 
 uninstall() {
    systemctl stop apache2
-   rm -rF /var/www/site11
+   rm -Rf /var/www/site11
    apt purge -y apache2
    apt autoremove --purge -y
    apt autoclean
