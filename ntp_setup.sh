@@ -17,7 +17,8 @@ EOF
 
 uninstall() {
 	systemctl stop systemd-timesyncd
-	echo "" > /etc/systemd/timesyncd.conf
+	rm /etc/systemd/timesyncd.conf
+	touch /etc/systemd/timesyncd.conf
 	timedatectl status
 	exit 0
 }
