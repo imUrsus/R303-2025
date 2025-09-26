@@ -3,7 +3,7 @@
 
 install() {
 	apt update
-	apt install dovecot-core dovecot-pop3d dovecot-imapd -y
+	apt install dovecot-pop3d dovecot-imapd -y
   systemctl status dovecot
 	exit 0
 }
@@ -11,7 +11,7 @@ install() {
 
 uninstall() {
 	systemctl stop dovecot
-	apt purge -y dovecot-*
+	apt purge -y dovecot-core
 	apt autoremove --purge -y
 	apt autoclean
 	apt clean

@@ -4,6 +4,7 @@
 install() {
 	apt update
 	apt install postfix mailutils -y
+  systemctl status postfix
 	exit 0
 }
 
