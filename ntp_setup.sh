@@ -2,10 +2,8 @@
 
 
 install() {
-	if ! systemctl status systemd-timesyncd >/dev/null 2>&1; then
-		apt update
-		apt install systemd-timesyncd -y
-	fi
+	apt update
+	apt install systemd-timesyncd -y
 
 	cat > /etc/systemd/timesyncd.conf <<EOF
 [Time]
