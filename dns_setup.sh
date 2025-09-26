@@ -52,7 +52,6 @@ EOF
 
 	named-checkconf named.conf
 	named-checkzone b11.lan db.b11.lan
-	systemctl restart bind9
 	systemctl status bind9
 	cd "$cwd"
 	exit 0
