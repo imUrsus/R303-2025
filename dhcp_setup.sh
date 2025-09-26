@@ -9,7 +9,7 @@ install() {
 {
   "Dhcp4": {
     "interfaces-config": {
-      "interfaces": [ "ens192" ]
+      "interfaces": [ "ens18" ]
     },
     "subnet4": [
       {
