@@ -82,12 +82,16 @@ if [ $# -eq 1 ]; then
 		else
 			echo "Script execution cancelled: bind9 is already installed!"
 			exit 1
+		fi
+	fi
 	elif [ "$action" = "uninstall" ]; then
 		if systemctl status bind9 >/dev/null 2>&1; then
 			uninstall
 		else
 			echo "Script execution cancelled: bind9 cannot be uninstalled, it was not installed in the first place!"
 			exit 1
+		fi
+	fi
 fi
 echo "Script execution cancelled: expects one argument, 'install' or 'uninstall'."
 exit 1

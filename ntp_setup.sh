@@ -35,12 +35,16 @@ if [ $# -eq 1 ]; then
 		else
 			echo "Script execution cancelled: ntp is already installed!"
 			exit 1
+		fi
+	fi
 	elif [ "$action" = "uninstall" ]; then
 		if [ -s /etc/systemd/timesyncd.conf ]; then
 			uninstall
 		else
 			echo "Script execution cancelled: ntp cannot be uninstalled, it was not installed in the first place!"
 			exit 1
+		fi
+	fi
 fi
 echo "Script execution cancelled: expects one argument, 'install' or 'uninstall'."
 exit 1
