@@ -14,9 +14,6 @@ install() {
     "subnet4": [
       {
         "subnet": "10.10.11.0/16",
-        "pools": [
-          { "pool": "10.10.11.2 - 10.10.11.241" }
-        ],
         "option-data": [
           {
             "name": "routers",
@@ -29,22 +26,22 @@ install() {
         ],
         "reservations": [
           {
-            "hw-address": "00:0c:29:0a:6f:c3", # à changer
+            "hw-address": "bc:24:11:39:bc:f8",
             "ip-address": "10.10.11.2",
             "hostname": "serveur-MAIL-FI2B11"
           },
           {
-            "hw-address": "00:0c:29:0a:6f:c3", # à changer
+            "hw-address": "bc:24:11:74:05:c4",
             "ip-address": "10.10.11.3",
             "hostname": "W11-FI2B11"
           },
           {
-            "hw-address": "00:0c:29:0a:6f:c3", # à changer
+            "hw-address": "bc:24:11:aa:6b:99",
             "ip-address": "10.10.11.4",
             "hostname": "client-debian-FI2B11"
           },
           {
-            "hw-address": "00:0c:29:0a:6f:c3", # à changer
+            "hw-address": "bc:24:11:02:42:dd",
             "ip-address": "10.10.11.5",
             "hostname": "serveur-splunk-FI2B11"
           },
