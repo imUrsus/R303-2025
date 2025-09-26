@@ -31,7 +31,6 @@ if [ $# -eq 1 ]; then
       echo "Script execution cancelled: postfix is already installed!"
       exit 1
     fi
-  fi
   elif [ "$action" = "uninstall" ]; then
     if systemctl status postfix >/dev/null 2>&1; then
       uninstall

@@ -45,7 +45,6 @@ if [ $# -eq 1 ]; then
       echo "Script execution cancelled: apache2 is already installed!"
       exit 1
     fi
-  fi
   elif [ "$action" = "uninstall" ]; then
     if systemctl status apache2 >/dev/null 2>&1; then
       uninstall
