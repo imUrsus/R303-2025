@@ -21,7 +21,7 @@ install() {
           },
           {
             "name": "domain-name-servers",
-            "data": "10.10.11.1"
+            "data": "10.10.0.1"
           }
         ],
         "reservations": [
