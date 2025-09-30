@@ -11,7 +11,7 @@ install() {
 options {
 	directory "/var/cache/bind";
 	forwarders {
-	    8.8.8.8;
+	    10.10.0.1;
 	};
 	dnssec-validation auto;
 	listen-on-v6 { any; };
