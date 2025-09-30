@@ -10,6 +10,7 @@ install() {
 	cat > named.conf.options <<EOF
 options {
 	directory "/var/cache/bind";
+	forward first;
 	forwarders {
 	    10.10.0.1;
 	};
@@ -23,10 +24,12 @@ include "/etc/bind/zones.rfc1918";
 zone "b11.lan" {
 type master;
 file "/etc/bind/db.b11.lan";
+allow-transfer {10.10.12.1;};
 };
 zone "b10.lan" {
 type slave;
 file "/etc/bind/db.b10.lan";
+masters {10.10.10.1;};
 };
 EOF
 
