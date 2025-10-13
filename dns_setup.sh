@@ -43,7 +43,7 @@ $install_serial
 5D
 1D )
 @ IN NS ns.b11.lan.
-@ IN MX 10 mail.b11.lan.
+@ IN MX 10 admin.b11.lan.
 ns A 10.10.11.1
 mail A 10.10.11.2
 serveur-FI2B11 A 10.10.11.1
