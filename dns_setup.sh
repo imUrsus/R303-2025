@@ -44,7 +44,7 @@ $install_serial
 1D )
 @ IN NS ns.b11.lan.
 @ IN MX 10 mail.b11.lan.
-ns1 A 10.10.11.1
+ns A 10.10.11.1
 mail A 10.10.11.2
 serveur-FI2B11 A 10.10.11.1
 serveur-MAIL-FI2B11 A 10.10.11.2
