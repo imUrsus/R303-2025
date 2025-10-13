@@ -36,7 +36,7 @@ EOF
 	install_serial="$(date +%Y%m%d)01"
 	cat > db.b11.lan <<EOF
 \$TTL 3h
-@ IN SOA ns.b11.lan. mailaddress.b11.lan. (
+@ IN SOA ns.b11.lan. admin.b11.lan. (
 $install_serial
 6H
 1H
@@ -44,7 +44,8 @@ $install_serial
 1D )
 @ IN NS ns.b11.lan.
 @ IN MX 10 mail.b11.lan.
-ns A 10.10.11.1
+ns1 A 10.10.11.1
+mail A 10.10.11.2
 serveur-FI2B11 A 10.10.11.1
 serveur-MAIL-FI2B11 A 10.10.11.2
 W11-FI2B11 A 10.10.11.3

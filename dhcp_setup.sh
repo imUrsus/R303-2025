@@ -44,7 +44,7 @@ install() {
             "hw-address": "bc:24:11:02:42:dd",
             "ip-address": "10.10.11.5",
             "hostname": "serveur-splunk-FI2B11"
-          },
+          }
         ],
         "valid-lifetime": 30,
         "max-valid-lifetime": 30
